@@ -9,18 +9,18 @@ var db = require('../db');
 
 // Define the home page route
 router.get('/', function(req, res) {
-
+    const today = new Date()
+    const year = today.getFullYear();
+    
     
        
        res.render('index', {
       
-       
+        year
         
     });
 
-    const today = new Date()
-    const year = today.getFullYear();
-    console.log(year)
+  
 
 });
 
